@@ -61,8 +61,8 @@ public class UserRegistration {
      */
 	//USE CASE 5 rule 1
     boolean isValidPassword(String password) {
-        String regex = "^.{8,}$";
-        Pattern pattern = Pattern.compile(regex);
+    	String combinedRules = "^(?=.*[A-Z]).{8,}$";
+        Pattern pattern = Pattern.compile(combinedRules);
         Matcher matcher = pattern.matcher(password);
         return matcher.matches();
     }
