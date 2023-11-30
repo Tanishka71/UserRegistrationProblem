@@ -9,7 +9,7 @@ public class UserRegistration {
 	 * @return:none
 	 */
 	//USE CASE 1
-	boolean validFirstName(String firstName) {
+	boolean isvalidFirstName(String firstName) {
 		String regex="^[A-Z][a-zA-Z]{2,}$";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(firstName);
@@ -21,7 +21,7 @@ public class UserRegistration {
 	 * @return:none
 	 */
 	//USE CASE 2
-	boolean validLastName(String lastName) {
+	boolean isvalidLastName(String lastName) {
 		String regex="^[A-Z][a-zA-Z]{2,}$";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(lastName);
