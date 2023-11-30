@@ -7,12 +7,12 @@ public class UserRegistrationMain {
 		   UserRegistration user=new UserRegistration();
 	   
 	        Scanner scanner = new Scanner(System.in);
-	        System.out.print("Enter your phoneNo: ");
-	        String phoneNo = scanner.nextLine();
-	        if (user.isValidPhoneNo(phoneNo)) {
-	            System.out.println("Valid phoneNo: " + phoneNo);
+	        System.out.print("Enter your password: ");
+	        String password = scanner.nextLine();
+	        if (user.isValidPassword(password)) {
+	            System.out.println("Valid password: " + password);
 	        } else {
-	            System.out.println("Invalid phoneNo. Please follow the specified format.");
+	            System.out.println("Invalid password. Please follow the specified format.");
 	        }
 
 	        scanner.close();

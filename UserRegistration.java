@@ -53,5 +53,18 @@ public class UserRegistration {
         Matcher matcher = pattern.matcher(phoneNo);
         return matcher.matches();
     }
+    
+    /**
+     * @desc:Validates the entered email based on specified criteria.
+     * @param THE phone number to be validated.
+     * @return true if the email is valid, false otherwise.
+     */
+	//USE CASE 5 rule 1
+    boolean isValidPassword(String password) {
+        String regex = "^.{8,}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(password);
+        return matcher.matches();
+    }
 
 }
