@@ -15,7 +15,7 @@ class UserRegistrationTest {
 	@Test
 	void test() {
 		
-		assertEquals(true,user.isValidPassword("Tsshudebh"),
+		assertEquals(true,user.isValidPassword("Tss88hudebh"),
 				"checks for Password: ");
 	}
 
