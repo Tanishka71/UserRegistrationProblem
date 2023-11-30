@@ -15,7 +15,7 @@ class UserRegistrationTest {
 	@Test
 	void test() {
 		
-		assertEquals(true,user.validFirstName("Tanishka"),
+		assertEquals(true,user.validLastName("Jain"),
 				"checks for valid name: ");
 	}
 
