@@ -59,9 +59,9 @@ public class UserRegistration {
      * @param THE phone number to be validated.
      * @return true if the email is valid, false otherwise.
      */
-	//USE CASE 5 rule 1
+	//USE CASE 8 rule 4 
     boolean isValidPassword(String password) {
-    	String combinedRules = "^(?=.*[A-Z])(?=.*\\d).{8,}$";
+    	 String combinedRules = "^(?=.*[A-Z])(?=.*\\d)(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?]).{8,}$";
         Pattern pattern = Pattern.compile(combinedRules);
         Matcher matcher = pattern.matcher(password);
         return matcher.matches();
