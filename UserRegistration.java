@@ -35,16 +35,22 @@ public class UserRegistration {
      */
 	//USE CASE 3
     boolean isValidEmail(String email) {
-        // Regular expression for a valid email
         String regex = "^[a-zA-Z0-9]+([._%+-]+[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(\\.[a-zA-Z]{2,}){1,2}$";
-
-        // Create a Pattern object
         Pattern pattern = Pattern.compile(regex);
-
-        // Create a Matcher object
         Matcher matcher = pattern.matcher(email);
-
-        // Check if the email matches the pattern
+        return matcher.matches();
+    }
+    
+    /**
+     * @desc:Validates the entered email based on specified criteria.
+     * @param THE phone number to be validated.
+     * @return true if the email is valid, false otherwise.
+     */
+	//USE CASE 4
+    boolean isValidPhoneNo(String phoneNo) {
+        String regex = "^\\d{2} \\d{10}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(phoneNo);
         return matcher.matches();
     }
 
