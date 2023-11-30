@@ -7,12 +7,12 @@ public class UserRegistrationMain {
 		   UserRegistration user=new UserRegistration();
 	   
 	        Scanner scanner = new Scanner(System.in);
-	        System.out.print("Enter your last name: ");
-	        String lastName = scanner.nextLine();
-	        if (user.validLastName(lastName)) {
-	            System.out.println("Valid last name: " + lastName);
+	        System.out.print("Enter your email: ");
+	        String email = scanner.nextLine();
+	        if (user.isValidEmail(email)) {
+	            System.out.println("Valid email: " + email);
 	        } else {
-	            System.out.println("Invalid last name. Please follow the specified format.");
+	            System.out.println("Invalid email. Please follow the specified format.");
 	        }
 
 	        scanner.close();
